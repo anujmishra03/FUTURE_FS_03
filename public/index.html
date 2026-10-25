@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Copper Kettle Café &amp; Bistro | Artisan Coffee &amp; All-Day Brunch</title>
+  <meta name="description" content="The Copper Kettle is an artisan café &amp; brunch bistro in the Heritage District. Single-origin pour-overs, handmade sourdough croissants, and seasonal brunch. Reserve your table online.">
+  <meta name="theme-color" content="#201712">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c97a3e'><path d='M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/cafe.css">
+
+  <!-- Schema.org Restaurant Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Copper Kettle Café & Bistro",
+    "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb",
+    "telephone": "+1-555-742-8890",
+    "email": "hello@copperkettlecafe.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "42 Market Square",
+      "addressLocality": "Heritage District",
+      "addressRegion": "CA",
+      "postalCode": "94103",
+      "addressCountry": "US"
+    },
+    "servesCuisine": ["Coffee", "Artisan Brunch", "Bakery", "European"],
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday"], "opens": "07:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday"], "opens": "07:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "07:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "08:00", "closes": "18:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <a href="#top" class="brand-wrap">
+      <div class="brand-logo-icon">☕</div>
+      <div class="brand-text">
+        <h1>The Copper Kettle</h1>
+        <p>Café &amp; Bistro · Est. 2021</p>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Main Navigation">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Digital Menu</a>
+      <a href="#reserve">Reservations</a>
+      <a href="#hours">Hours &amp; Location</a>
+      <a href="#pitch" style="color: var(--copper); font-weight: 600;">Client Pitch &amp; Strategy</a>
+    </nav>
+
+    <div style="display: flex; gap: 0.5rem; align-items: center;">
+      <a href="#reserve" class="btn btn-primary">Book a Table</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="live-badge" id="heroLiveStatus">
+          <span class="live-dot"></span>
+          <span id="liveStatusText">Loading hours...</span>
+        </div>
+        <h2 class="hero-title">Where Craft Coffee Meets <em>Sourdough Solace</em>.</h2>
+        <p class="hero-lead">
+          Single-origin pour-overs, 72-hour laminated French pastries, and nourishing seasonal brunch prepared daily in our warm brick-and-timber roastery.
+        </p>
+        <div class="hero-actions">
+          <a href="#reserve" class="btn btn-primary" style="padding: 0.85rem 1.6rem; font-size: 1rem;">Reserve Your Table</a>
+          <a href="#menu" class="btn btn-outline" style="padding: 0.85rem 1.6rem; font-size: 1rem;">Explore Menu</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="The Copper Kettle cafe interior" class="hero-card-img" loading="lazy">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="hero-rating">
+              <span style="color: #f59e0b; font-size: 1.1rem;">★★★★★</span>
+              <span>4.9 / 5.0</span>
+              <span style="color: var(--text-muted); font-size: 0.8rem;">(380+ Google Reviews)</span>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--copper);">Heritage District</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story / Values -->
+    <section id="story" class="section">
+      <div class="section-head">
+        <div class="section-kicker">Craftsmanship &amp; Heritage</div>
+        <h2 class="section-title">Rooted in Passion, Poured with Care</h2>
+        <p style="color: var(--text-muted);">
+          Every cup starts with relationships. We partner directly with sustainable micro-farms across Ethiopia, Guatemala, and Colombia to ensure fair wages and extraordinary harvest lots.
+        </p>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-card">
+          <div class="story-icon">🌿</div>
+          <h3>Direct-Trade Beans</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">
+            Sourced ethically with 100% traceability. Roasted in small 12kg batches on our vintage Probat roaster twice weekly.
+          </p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-icon">🥐</div>
+          <h3>Slow-Fermented Bakery</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">
+            Our sourdough croissants undergo a strict 72-hour cold-fermentation process with Normandy cultured butter.
+          </p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-icon">🍳</div>
+          <h3>Local Farm-to-Table</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">
+            Free-range pasture-raised eggs from Willow Creek Farm and organic sourdough milled from heirloom grains.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Menu Section -->
+    <section id="menu" class="section" style="background: #fdfaf6; border-radius: var(--radius-lg); padding: 4rem 2rem;">
+      <div class="section-head">
+        <div class="section-kicker">Handcrafted Daily</div>
+        <h2 class="section-title">Our Seasonal Digital Menu</h2>
+        <p style="color: var(--text-muted);">
+          Explore our coffee specialties, organic tisanes, and chef-curated brunch offerings.
+        </p>
+      </div>
+
+      <div class="menu-controls" id="menuFilters">
+        <button class="menu-filter-btn active" data-category="all">All Items</button>
+        <button class="menu-filter-btn" data-category="coffee">Signature Coffees</button>
+        <button class="menu-filter-btn" data-category="tea">Artisan Teas</button>
+        <button class="menu-filter-btn" data-category="brunch">All-Day Brunch</button>
+        <button class="menu-filter-btn" data-category="bakery">Bakery &amp; Pastries</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Rendered dynamically by JS -->
+      </div>
+    </section>
+
+    <!-- Online Table Reservation Section -->
+    <section id="reserve" class="section">
+      <div class="section-head">
+        <div class="section-kicker">Instant Confirmation</div>
+        <h2 class="section-title">Reserve a Table</h2>
+        <p style="color: var(--text-muted);">
+          Skip third-party booking fees. Reserve your table directly with our host team for casual dining, business meetings, or weekend brunch celebrations.
+        </p>
+      </div>
+
+      <div class="reservation-box">
+        <div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 0.75rem; color: var(--espresso);">Your Table Awaits</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            Direct bookings receive priority seating, complimentary sparkling water, and instant SMS/Email confirmation.
+          </p>
+
+          <div style="background: var(--cream); border-left: 3px solid var(--copper); padding: 1rem; margin-bottom: 1.5rem; font-size: 0.85rem;">
+            <strong>Booking Policy:</strong> We hold tables for 15 minutes past reservation time. For parties larger than 12 guests, please contact our private events team below.
+          </div>
+
+          <div style="font-size: 0.85rem; color: var(--text-muted);">
+            <p>📍 <strong>Location:</strong> 42 Market Square, Heritage District</p>
+            <p>📞 <strong>Direct Phone:</strong> +1 (555) 742-8890</p>
+            <p>✉️ <strong>Host Email:</strong> reservations@copperkettlecafe.com</p>
+          </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <form id="reservationForm">
+          <div class="res-form-grid">
+            <div class="form-group">
+              <label for="resName">Full Name *</label>
+              <input type="text" id="resName" required placeholder="e.g. Rachel Green">
+            </div>
+
+            <div class="form-group">
+              <label for="resEmail">Email Address *</label>
+              <input type="email" id="resEmail" required placeholder="rachel@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="resPhone">Phone Number *</label>
+              <input type="tel" id="resPhone" required placeholder="+1 (555) 012-3456">
+            </div>
+
+            <div class="form-group">
+              <label for="resParty">Party Size *</label>
+              <select id="resParty" required>
+                <option value="1">1 Person (Solo diner / coffee bar)</option>
+                <option value="2" selected>2 People (Cozy table)</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="8">8 People (Large communal table)</option>
+                <option value="10">10-12 People (Private garden booth)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resDate">Reservation Date *</label>
+              <input type="date" id="resDate" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resTime">Preferred Time *</label>
+              <select id="resTime" required>
+                <option value="08:00">8:00 AM (Early Roast)</option>
+                <option value="09:30">9:30 AM (Breakfast)</option>
+                <option value="11:00">11:00 AM (Brunch Rush)</option>
+                <option value="12:30" selected>12:30 PM (Midday Lunch)</option>
+                <option value="14:00">2:00 PM (Afternoon Coffee)</option>
+                <option value="16:00">4:00 PM (Tea & Pastries)</option>
+                <option value="18:00">6:00 PM (Bistro Dinner)</option>
+                <option value="19:30">7:30 PM (Evening Mood)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resSeating">Seating Preference</label>
+              <select id="resSeating">
+                <option value="Main Dining Hall">Main Dining Hall (Sunlit)</option>
+                <option value="Garden Patio">Outdoor Garden Patio (Heated)</option>
+                <option value="Coffee Bar">Espresso Bar Front Seats</option>
+                <option value="Quiet Alcove">Quiet Corner / Work Friendly</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resOccasion">Occasion</label>
+              <select id="resOccasion">
+                <option value="Casual Gathering">Casual Dining</option>
+                <option value="Birthday Celebration">Birthday Celebration</option>
+                <option value="Business Meeting">Business Discussion</option>
+                <option value="Anniversary">Anniversary / Date</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label for="resRequests">Special Requests / Dietary Notes (Optional)</label>
+              <textarea id="resRequests" rows="2" placeholder="e.g. Highchair needed, vegan options, celebrating a milestone..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" id="btnSubmitReservation" class="btn btn-primary" style="width: 100%; padding: 0.9rem; font-size: 1rem; margin-top: 0.5rem;">
+            Confirm Reservation
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Customer Reviews / Social Proof -->
+    <section class="section">
+      <div class="section-head">
+        <div class="section-kicker">Loved by Locals</div>
+        <h2 class="section-title">What Our Guests Are Saying</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Hands down the best pour-over in the city. The Ethiopian single-origin Chemex paired with the cardamom morning bun is my Saturday morning ritual."</p>
+          <div class="review-author">— Julian Barnes, Coffee Enthusiast</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Booked their heated garden patio for our company brunch. Flawless service, every poached egg was perfection, and reserving on their website took under 30 seconds."</p>
+          <div class="review-author">— Samantha Wright, Studio Director</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"A rare café that takes tea and gluten-free pastries as seriously as espresso. The almond teacake and matcha latte are unparalleled."</p>
+          <div class="review-author">— Michael Chang, Food Writer</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours & Location -->
+    <section id="hours" class="section">
+      <div class="section-head">
+        <div class="section-kicker">Find Us</div>
+        <h2 class="section-title">Opening Hours &amp; Location</h2>
+        <p style="color: var(--text-muted);">Located conveniently opposite the Heritage Clocktower.</p>
+      </div>
+
+      <div class="reservation-box" style="grid-template-columns: 1.1fr 0.9fr;">
+        <div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--espresso);">Weekly Operating Schedule</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Kitchen closes 45 minutes prior to closing time.</p>
+          
+          <table class="hours-table" id="scheduleTable">
+            <!-- Rendered by JS with today highlighted -->
+          </table>
+        </div>
+
+        <div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--espresso);">Visiting Us</h3>
+          <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem;">
+            <strong>Address:</strong> 42 Market Square, Heritage District, San Francisco, CA<br>
+            <strong>Transit:</strong> 2 blocks from Central Heritage Station<br>
+            <strong>Parking:</strong> Free 2-hour validated customer parking in rear lot
+          </p>
+
+          <div style="background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1.25rem; font-size: 0.85rem;">
+            <strong>💼 Corporate Catering &amp; Events?</strong><br>
+            We cater breakfast meetings, artisan coffee bars, and private weekend dinner receptions.
+            <div style="margin-top: 0.75rem;">
+              <button id="btnOpenEnquiry" class="btn btn-secondary btn-sm">Submit Event Inquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE PITCH BANNER & STRATEGY SECTION (Task 3 Requirement) -->
+    <section id="pitch" class="section" style="background: var(--espresso); color: #fff; border-radius: var(--radius-lg); padding: 3.5rem 2.5rem; margin-top: 2rem;">
+      <div style="max-width: 850px; margin: 0 auto; text-align: center;">
+        <span class="pitch-pill" style="margin-bottom: 1rem;">Future Interns Task 3 · Live Pitch Project</span>
+        <h2 style="font-family: var(--font-serif); font-size: 2.25rem; margin-bottom: 1rem; color: #fff;">How This Website Helps The Copper Kettle Grow</h2>
+        <p style="color: #c7beba; font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+          We built this platform not as a static brochure, but as a direct revenue and customer retention engine. By cutting out third-party aggregators (UberEats / OpenTable), The Copper Kettle saves an estimated <strong>$14,500/year in commissions</strong>, captures customer emails directly into our Task 2 CRM, and increases table turn rates with direct digital bookings.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: left; margin-bottom: 2.5rem;">
+          <div style="background: rgba(255,255,255,0.06); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1);">
+            <div style="color: var(--copper); font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem;">$0 Commissions</div>
+            <p style="font-size: 0.85rem; color: #b0a7a2;">Direct booking engine eliminates 20-30% food aggregator fees.</p>
+          </div>
+          <div style="background: rgba(255,255,255,0.06); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1);">
+            <div style="color: var(--copper); font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem;">100% CRM Capture</div>
+            <p style="font-size: 0.85rem; color: #b0a7a2;">Every diner lead streams directly into the LeadDesk Mini CRM.</p>
+          </div>
+          <div style="background: rgba(255,255,255,0.06); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1);">
+            <div style="color: var(--copper); font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem;">+40% Local SEO</div>
+            <p style="font-size: 0.85rem; color: #b0a7a2;">Schema.org Restaurant structure ranks higher on Google Maps searches.</p>
+          </div>
+        </div>
+
+        <a href="/PITCH.md" target="_blank" class="btn btn-primary" style="padding: 0.85rem 1.8rem; font-size: 1rem;">
+          📄 Read Full Business Pitch &amp; Deck Script (PITCH.md)
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Reservation Confirmation Modal -->
+  <div id="confirmModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div style="font-size: 3rem; margin-bottom: 0.5rem;">🎉</div>
+      <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--espresso); margin-bottom: 0.5rem;">Table Reserved!</h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">
+        Thank you, <strong id="modalName"></strong>. Your table reservation at The Copper Kettle is confirmed.
+      </p>
+
+      <div class="confirm-code" id="modalCode">CK-0000</div>
+
+      <div style="text-align: left; background: var(--cream); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; margin-bottom: 1.5rem;">
+        <p>📅 <strong>Date:</strong> <span id="modalDate"></span></p>
+        <p>⏰ <strong>Time:</strong> <span id="modalTime"></span></p>
+        <p>👥 <strong>Party:</strong> <span id="modalParty"></span> guests (<span id="modalSeating"></span>)</p>
+        <p id="modalCrmNotice" style="color: var(--copper); margin-top: 0.5rem; font-weight: 600;"></p>
+      </div>
+
+      <button id="btnCloseModal" class="btn btn-secondary" style="width: 100%;">Done</button>
+    </div>
+  </div>
+
+  <!-- Catering & Events Modal -->
+  <div id="enquiryModal" class="modal-overlay hidden">
+    <div class="modal-card" style="text-align: left; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.4rem;">Private Events &amp; Catering</h3>
+        <button id="btnCloseEnquiry" class="btn btn-outline btn-sm">✕</button>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+        We provide mobile espresso bars, breakfast buffet setups, and after-hours private dining.
+      </p>
+
+      <form id="enquiryForm">
+        <div class="form-group">
+          <label for="enqName">Your Name *</label>
+          <input type="text" id="enqName" required placeholder="Full Name">
+        </div>
+        <div class="form-group">
+          <label for="enqEmail">Email *</label>
+          <input type="email" id="enqEmail" required placeholder="name@company.com">
+        </div>
+        <div class="form-group">
+          <label for="enqPhone">Phone</label>
+          <input type="tel" id="enqPhone" placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="form-group">
+          <label for="enqType">Event Type</label>
+          <select id="enqType">
+            <option value="Corporate Office Catering">Corporate Breakfast / Catering</option>
+            <option value="Private Dinner Reception">Private Evening Dinner Reception</option>
+            <option value="Mobile Espresso Bar">Mobile Barista Bar (Weddings &amp; Events)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="enqMessage">Event Date, Guest Count &amp; Scope *</label>
+          <textarea id="enqMessage" rows="3" required placeholder="Tell us about your expected guests, timing, and dietary preferences..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Event Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 style="font-size: 1.35rem; color: #fff;">The Copper Kettle</h4>
+        <p>
+          Specialty Coffee Roastery &amp; Artisan Sourdough Bistro.<br>
+          Serving the Heritage District with passion, seasonal integrity, and warm hospitality since 2021.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <p><a href="#story">Our Story</a></p>
+        <p><a href="#menu">Digital Menu</a></p>
+        <p><a href="#reserve">Online Reservations</a></p>
+        <p><a href="#hours">Hours &amp; Location</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Future Interns</h4>
+        <p><a href="http://localhost:3000">Task 1: Portfolio</a></p>
+        <p><a href="http://localhost:3001">Task 2: LeadDesk CRM</a></p>
+        <p><a href="#pitch">Task 3: Pitch Project</a></p>
+        <p><a href="/PITCH.md">Client Proposal Doc</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <p>42 Market Square, Heritage District</p>
+        <p>hello@copperkettlecafe.com</p>
+        <p>+1 (555) 742-8890</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 The Copper Kettle Café &amp; Bistro · Built by Anuj Mishra</div>
+      <div>
+        <a href="/PITCH.md" class="pitch-pill">View Live Pitch Deck (PITCH.md)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/cafe.js"></script>
+</body>
+</html>
